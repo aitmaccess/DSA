@@ -1,6 +1,6 @@
 import pandas as pd 
 
-df = pd.read_csv('/content/ML LAB/enjoysport.csv') 
+df = pd.read_csv('enjoysport.csv') 
 a = df.values.tolist() 
 
 print(df) 
