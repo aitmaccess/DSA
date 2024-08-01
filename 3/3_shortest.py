@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 
-data = pd.read_csv('/content/drive/MyDrive/Datasets_ml/PlayTennis.csv')
+data = pd.read_csv('PlayTennis.csv')
 x = data[['Outlook', 'Temperature', 'Humidity', 'Wind']]
 y = data['Play Tennis']
 
