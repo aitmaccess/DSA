@@ -14,5 +14,5 @@ model = BayesianModel([("A", "B"), ("B", "C"), ("C", "D"), ("D", "RESULT")])
 model.fit(data, estimator=MaximumLikelihoodEstimator) 
 
 infer = VariableElimination(model) 
-q = infer.query(variables=['RESULT'], evidence={"C": 2}) 
+q = infer.query(variables=['RESULT'], evidence={"C": "2"}) 
 print(q)
