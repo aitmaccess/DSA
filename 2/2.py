@@ -1,6 +1,5 @@
-# 2
 import pandas as pd
-df = pd.read_csv('/content/drive/MyDrive/enjoysport.csv')
+df = pd.read_csv('enjoysport.csv')
 
 a = df.values.tolist()
 print(df)
@@ -16,15 +15,15 @@ temp=[]
 print("\n Candidate Elimination algorithm\n")
 
 for i in range(len(a)):
-  if a[i][n]=="yes": #Use Positive for manufacture.csv
+  if a[i][n]=="yes": 
     for j in range(n):
       if a[i][j]!=s[j]:
         s[j]='?'
   for j in range(n):
-    for k in range(len(temp)): #Use len(temp)-1 for manufacture.csv
+    for k in range(len(temp)): 
       if temp[k][j]!='?' and temp[k][j]!=s[j]:
         del temp[k]
-  if a[i][n]=="no": #Use Negative for manufacture.csv
+  if a[i][n]=="no": 
     for j in range(n):
       if s[j]!=a[i][j] and s[j]!='?':
         g[j]=s[j]
